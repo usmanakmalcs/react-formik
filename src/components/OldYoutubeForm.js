@@ -38,7 +38,7 @@ function OldYoutubeForm(params) {
           <label htmlFor="name" data-testid="name">
             Name
           </label>
-          <Field
+          <input
             type="text"
             name="name"
             id="name"
@@ -55,7 +55,7 @@ function OldYoutubeForm(params) {
           <label htmlFor="email" data-testid="email">
             Email
           </label>
-          <Field
+          <input
             type="email"
             name="email"
             id="email"
@@ -71,7 +71,7 @@ function OldYoutubeForm(params) {
           <label htmlFor="channel" data-testid="email">
             Channel
           </label>
-          <Field
+          <input
             type="text"
             name="channel"
             id="channel"
