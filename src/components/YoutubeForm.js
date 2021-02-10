@@ -9,6 +9,10 @@ const initialValues = {
   channel: "",
   comments: "",
   address: "",
+  social: {
+    facebook: "",
+    twitter: "",
+  },
 };
 
 const onSubmit = (values) => console.log(values);
@@ -65,7 +69,7 @@ function YoutubeForm(params) {
 
           <div className="form-control">
             <label htmlFor="address" data-testid="address">
-              Address with render
+              Address
             </label>
             <Field name="address">
               {(props) => {
@@ -82,6 +86,15 @@ function YoutubeForm(params) {
             </Field>
           </div>
 
+          <div className="form-control">
+            <label htmlFor="facebook"> Facebook Profile </label>
+            <Field type="text" id="facebook" name="social.facebook" />
+          </div>
+
+          <div className="form-control">
+            <label htmlFor="twitter"> Twitter Profile </label>
+            <Field type="text" id="twitter" name="social.twitter" />
+          </div>
           <button type="submit">Submit</button>
         </Form>
       </Formik>
