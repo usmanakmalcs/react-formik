@@ -43,9 +43,7 @@ function YoutubeForm(params) {
             </label>
             <Field type="email" name="email" id="email" />
             <ErrorMessage name="email">
-              {(errorMsg) => {
-                return <TextError>{errorMsg}</TextError>;
-              }}
+              {(errorMsg) => <TextError>{errorMsg}</TextError>}
             </ErrorMessage>
           </div>
 
