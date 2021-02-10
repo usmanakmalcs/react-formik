@@ -19,7 +19,9 @@
   margin-bottom: 3px;
 }
 
-.App input {
+input[type="text"],
+input[type="email"],
+textarea {
   font-size: 13px;
   padding: 10px;
   display: block;
