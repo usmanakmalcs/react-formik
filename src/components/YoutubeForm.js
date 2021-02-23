@@ -23,6 +23,10 @@ function YoutubeForm(params) {
     name: Yup.string().required("Required!"),
     email: Yup.string().email("Inavlid Email!").required("Required!"),
     channel: Yup.string().required("Required!"),
+    social: Yup.object({
+      facebook: Yup.string().required("Required!"),
+      twitter: Yup.string().required("Required!"),
+    }),
   });
 
   return (
@@ -90,11 +94,13 @@ function YoutubeForm(params) {
           <div className="form-control">
             <label htmlFor="facebook"> Facebook profile </label>
             <Field type="text" id="facebook" name="social.facebook" />
+            <ErrorMessage name="social.facebook" component={TextError} />
           </div>
 
           <div className="form-control">
             <label htmlFor="twitter"> Twitter profile </label>
             <Field type="text" id="twitter" name="social.twitter" />
+            <ErrorMessage name="social.twitter" component={TextError} />
           </div>
 
           <div className="form-control">
